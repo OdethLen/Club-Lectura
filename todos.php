@@ -74,7 +74,7 @@ tr:hover{
 
 <div class="tabla-contenedor">
 
-<h2>Todos los estudiantes registrados</h2>
+<h2>Registro de los miembros del club</h2>
 
 <a href="exportar_xml.php" class="boton">Exportar a XML</a>
 <a href="index.html" class="boton">Volver</a>
