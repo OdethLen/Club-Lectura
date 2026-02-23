@@ -1,0 +1,1 @@
+<?php include "conexion.php"; $busqueda = $_GET['busqueda']; $sql = "SELECT * FROM estudiantes WHERE nombre LIKE '%$busqueda%'"; $result = $conn->query($sql); while ($fila = $result->fetch_assoc()) { echo $fila['nombre'] . " " . $fila['apellido'] . " - " . $fila['carrera'] . " - Semestre " . $fila['semestre'] . "<br>"; } $conn->close(); ?>

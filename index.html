@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Taller de Lectura</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#f5f1e6; /* beige claro */
+}
+
+/* ===== Banner ===== */
+.banner{
+    background-image: url("https://images.pexels.com/photos/2908984/pexels-photo-2908984.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    color: white;
+    background-color: rgba(101, 67, 33, 0.75); /* café semitransparente */
+    padding: 20px 40px;
+    font-size: 40px;
+    border-radius: 8px;
+}
+
+/* ===== Contenedor principal ===== */
+.contenedor{
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #fff8ef;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* ===== Títulos ===== */
+h2{
+    color:#5c3a21;
+}
+
+/* ===== Campos ===== */
+input[type=text], select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:5px;
+    border:1px solid #c9a27c;
+}
+
+/* ===== Botones ===== */
+input[type=submit]{
+    background-color:#6b4226;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+input[type=submit]:hover{
+    background-color:#8b5e3c;
+}
+
+hr{
+    border:1px solid #d9c2a3;
+    margin:25px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+    <h1>Taller de Lectura</h1>
+</div>
+
+<div class="contenedor">
+
+<h2>Registro al Club</h2>
+
+<form action="guardar.php" method="POST">
+
+Nombre:
+<input type="text" name="nombre" required>
+
+Apellido:
+<input type="text" name="apellido" required>
+
+Carrera:
+<select name="carrera" required>
+  <option>Ingeniería Industrial</option>
+  <option>Ingeniería Mecánica</option>
+  <option>Ingeniería Electrónica</option>
+  <option>Ingeniería Informática</option>
+  <option>Gestión Empresarial</option>
+  <option>Energías Renovables</option>
+</select>
+
+Semestre:
+<select name="semestre" required>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+</select>
+
+<input type="submit" value="Registrar">
+
+</form>
+
+<hr>
+
+<h2>Buscar estudiante por nombre</h2>
+
+<form action="buscar.php" method="GET">
+
+<input type="text" name="busqueda" placeholder="Escribe un nombre">
+
+<input type="submit" value="Buscar">
+
+</form>
+
+</div>
+
+</body>
+</html>
