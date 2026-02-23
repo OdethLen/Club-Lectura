@@ -9,7 +9,7 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background-color:#f5f1e6; /* beige claro */
+    background-color:#f5f1e6;
 }
 
 /* ===== Banner ===== */
@@ -24,14 +24,29 @@ body{
 }
 
 .banner h1{
-    color: white;
-    background-color: rgba(101, 67, 33, 0.75); /* café semitransparente */
-    padding: 20px 40px;
-    font-size: 40px;
-    border-radius: 8px;
+    color: white;      /* SOLO blanco */
+    font-size: 48px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* para que se vea sobre la imagen */
+    margin:0;
 }
 
-/* ===== Contenedor principal ===== */
+/* ===== Sección bienvenida ===== */
+.bienvenida{
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff8ef;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.bienvenida h2{
+    color:#5c3a21;
+    text-align:center;
+}
+
+/* ===== Contenedor formulario ===== */
 .contenedor{
     max-width: 700px;
     margin: 30px auto;
@@ -41,7 +56,6 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-/* ===== Títulos ===== */
 h2{
     color:#5c3a21;
 }
@@ -81,10 +95,27 @@ hr{
 
 <body>
 
+<!-- ===== Banner ===== -->
 <div class="banner">
     <h1>Taller de Lectura</h1>
 </div>
 
+<!-- ===== Bienvenida / Sobre nosotros ===== -->
+<div class="bienvenida">
+
+<h2>Bienvenido al Club de Lectura</h2>
+
+<p>
+El Club de Lectura de la universidad es un espacio pensado para estudiantes que disfrutan leer, descubrir nuevas historias y compartir opiniones sin formalidades. Aquí puedes hablar de libros, cómics, novelas o cualquier lectura que te interese, conocer personas con gustos similares y ver las historias desde puntos de vista distintos, todo en un ambiente relajado y amigable.
+</p>
+
+<p>
+Nos reunimos periódicamente para comentar lo que estamos leyendo, recomendar títulos, debatir teorías, analizar personajes y, sobre todo, pasar un buen rato. No necesitas ser experto ni leer a gran velocidad: lo importante es tener curiosidad y ganas de participar. Es un lugar para desconectarte del estrés académico, desarrollar tu creatividad y formar parte de una comunidad donde la lectura se vive de forma divertida y cercana.
+</p>
+
+</div>
+
+<!-- ===== Formulario ===== -->
 <div class="contenedor">
 
 <h2>Registro al Club</h2>
