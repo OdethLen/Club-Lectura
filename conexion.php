@@ -1,0 +1,1 @@
+<?php $host = "localhost"; $usuario = "odeth"; $password = "elike63194"; // si configuraste contraseña, escríbela aquí $bd = "club_lectura"; $conn = new mysqli($host, $usuario, $password, $bd); if ($conn->connect_error) { die("Error de conexión: " . $conn->connect_error); } ?>
